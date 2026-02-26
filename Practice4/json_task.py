@@ -1,6 +1,4 @@
 import json
-
-
 with open("Practice4/sample-data.json", "r") as f:
     data = json.load(f)
 
