@@ -49,3 +49,9 @@ def nums(n):
         yield i
 for num in nums(4):
     print(num)
+
+
+
+
+
+
