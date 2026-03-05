@@ -46,4 +46,4 @@ if pay1:
     print(f"Метод оплаты: {pay1.group(1)}")
 else:
     print("Метод оплаты: Неизвестно")
-print("="*40)
+print("="*45)
