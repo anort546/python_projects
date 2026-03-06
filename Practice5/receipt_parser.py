@@ -13,11 +13,11 @@ names=re.findall(patt2,text)
 print("all names",names)
 
 #total amount
-total=0
-for price in prices:
-    price_num = float(price.replace(",", ".").replace(" ", ""))
-    total += price_num
-print(f"total summ:{total:.2f}")
+patt_total = r"ИТОГО:\n([\d\s]+,\d{2})"
+itogo = re.search(patt_total, text)
+
+if itogo:
+    print("Итог", itogo.group(1))
 
 #Extract date and time information
 patt4=r"Время:\s*(.+)\n"
@@ -40,7 +40,7 @@ print("="*40)
 for name, price in zip(names, prices):
     print(f"{name.strip()} — Цена за штуку: {price}")
 print("-"*40)
-print(f"Общая сумма: {total:.2f}")
+print(f"Общая сумма: {itogo.group(1)}")
 print(f"Дата и время: {date.group(1)}")
 if pay1:
     print(f"Метод оплаты: {pay1.group(1)}")
