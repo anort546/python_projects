@@ -97,7 +97,7 @@ def import_csv():
     conn = connect()
     cur = conn.cursor()
 
-    with open("contacts.csv", "r") as f:
+    with open("D:\pp2\Practice7\contacts.csv", "r") as f:
         reader = csv.DictReader(f)
         for row in reader:
             cur.execute(
