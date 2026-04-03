@@ -61,20 +61,44 @@ def insert_many(names, phones):
 
 
 if __name__ == "__main__":
-    add("Anna", "12345")
-    add("Noone", "67890")
+    while True:
+        print("1.Добавить / Обновить")
+        print("2. Найти")
+        print("3. Показать,пагинация")
+        print("4. Удалить")
+        print("5. Массовая вставка")
+        
 
-    print("SEARCH:")
-    search("Ann")
+        choice = input("Выбор: ")
 
-    print("ALL:")
-    show(10, 0)
+        if choice == "1":
+            name = input("Имя: ")
+            phone = input("Телефон: ")
+            add(name, phone)
 
-    print("INSERT MANY:")
-    insert_many(["Adema", "Abay"], ["111", "abc"])  # abc покажет ошибку
+        elif choice == "2":
+            pattern = input("Введите для поиска: ")
+            search(pattern)
 
-    print("DELETE:")
-    delete("Anna")
+        elif choice == "3":
+            limit = int(input("Сколько показать: "))
+            offset = int(input("Сдвиг: "))
+            show(limit, offset)
 
-    print("FINAL:")
-    show(10, 0)
+        elif choice == "4":
+            val = input("Имя или телефон: ")
+            delete(val)
+
+        elif choice == "5":
+            n = int(input("Сколько записей: "))
+            names = []
+            phones = []
+
+            for i in range(n):
+                names.append(input(f"Имя {i+1}: "))
+                phones.append(input(f"Телефон {i+1}: "))
+
+            insert_many(names, phones)
+
+       
+        
