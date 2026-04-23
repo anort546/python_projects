@@ -14,8 +14,21 @@ running = True
 while running:
     screen.fill((0, 0, 0))
 
-    text = font.render("P-Play S-Stop N-Next B-Back Q-Quit", True, (255, 255, 255))
-    screen.blit(text, (50, 150))
+    
+    track_text = font.render("Now playing:", True, (255, 255, 255))
+    screen.blit(track_text, (50, 80))
+
+    name_text = font.render(player.get_current_track(), True, (0, 255, 0))
+    screen.blit(name_text, (50, 120))
+
+   
+    seconds = player.get_position()
+    time_text = font.render(f"Time: {seconds}s", True, (255, 255, 255))
+    screen.blit(time_text, (50, 160))
+
+   
+    controls = font.render("P-Play S-Stop N-Next B-Back Q-Quit", True, (255, 255, 255))
+    screen.blit(controls, (50, 300))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
