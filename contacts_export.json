@@ -1,0 +1,84 @@
+[
+  {
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "alice@gmail.com",
+    "birthday": "1995-03-14",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77001112233",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "first_name": "Bob",
+    "last_name": "Jones",
+    "email": "bob@work.com",
+    "birthday": "1988-07-22",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77002223344",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "first_name": "Carol",
+    "last_name": "White",
+    "email": "carol@gmail.com",
+    "birthday": "2000-01-05",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77003334455",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "first_name": "Dan",
+    "last_name": "Brown",
+    "email": "dan@example.com",
+    "birthday": null,
+    "group": "Other",
+    "phones": [
+      {
+        "phone": "+77004445566",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "first_name": "Eva",
+    "last_name": "Green",
+    "email": "eva@gmail.com",
+    "birthday": "1993-11-30",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77005556677",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "first_name": "Mike",
+    "last_name": null,
+    "email": null,
+    "birthday": null,
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "65648",
+        "type": "home"
+      },
+      {
+        "phone": "44",
+        "type": "mobile"
+      }
+    ]
+  }
+]
